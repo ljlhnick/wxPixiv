@@ -1,0 +1,20 @@
+<view>
+  <text class="h3">{{memberList[0].user.name}}收藏的插画</text>
+  <navigator url="../more/favorite?uid={{memberList[0].user.id}}"> 
+     <view class='user'>
+      <text class='nickname'>{{memberList[0].user.name}}</text>
+    </view>
+  </navigator>
+
+  <block wx:for="{{memberList}}" wx:key>
+      <view class='li'>
+          <text class='title'>{{item.title}}</text>
+          <text class='desc' wx:if="{{item.caption}}">描述:{{item.caption}}</text>
+          <image src='{{item.image_urls.px_128x128}}'></image>
+          <text class='time'>{{item.created_time}}</text>
+          <block class='btn'>
+              <button type='primary' plain  size="mini" wx:for="{{item.tags}}" wx:for-item="Initem" wx:key>{{Initem}}</button>
+          </block>
+    </view>
+  </block>
+</view>

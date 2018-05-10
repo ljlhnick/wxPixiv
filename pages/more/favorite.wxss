@@ -1,0 +1,33 @@
+/* pages/more/favorite.wxss */
+
+page{
+  background: black;
+}
+.h3{
+ display: block; margin:1rem;color: #f9320c;
+}
+.li{
+  margin: 1rem;height: 100%;
+  border: 1px solid #C4FF00;border-radius: 20px 20px 0 0 ;
+}
+.li text{
+  display: block;width: 100%;
+}
+.user .nickname{
+  display: block;width: 100%;color: #EFDC05;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin:0.5rem;text-align: center;font-size: 20px;
+}
+.li .title{
+  text-align: center;line-height: 30px;height: 30px;color: #EFDC05;
+}
+.li .desc{
+  padding:0.3rem;margin-left: 0.5rem;color:#EFDC05;
+}
+.li image{
+  width: 100%;
+}
+.li .time{
+  text-align: right;font-family: 'Times New Roman', Times, serif;font-size: 15px;margin: 0.5rem 0;
+}
+button{
+  color: #A8D877;
+}

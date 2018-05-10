@@ -1,0 +1,38 @@
+<view>
+  <view class='up'>
+    <view class='btn'>
+      <text>模式分类</text>
+      <button type="warn" plain size='mini' id="daily" bindtap='change_mode'>日榜</button>
+      <button type="warn" plain size='mini' id="weekly" bindtap='change_mode'>周榜</button>
+      <button type="warn" plain size='mini' id="monthly" bindtap='change_mode'>月榜</button>
+      <button type="warn" plain size='mini' id="rookie" bindtap='change_mode'>新人</button>
+      <button type="warn" plain size='mini' id="original" bindtap='change_mode'>原创</button>
+      <button type="warn" plain size='mini' id="male" bindtap='change_mode'>男性向</button>
+      <button type="warn" plain size='mini' id="female" bindtap='change_mode'>女性向</button>
+    </view>
+
+    <view class='btn'>
+      <text>内容分类</text>
+      <button type="warn" plain size='mini' id="all" bindtap='change_content'>综合</button>
+      <button type="warn" plain size='mini' id="illust" bindtap='change_content'>插画</button>
+      <button type="warn" plain size='mini' id="manga" bindtap='change_content'>漫画</button>
+      <button type="warn" plain size='mini' id="ugoira" bindtap='change_content'>动画</button>
+    </view>
+  </view>
+  <block wx:for="{{rankList.works}}" wx:for-item="item" wx:key>
+      <view class='li'>
+          <view class='user'>
+            <navigator url="../more/member_illust?uid={{item.work.user.id}}">
+              <text class='nickname'>{{index+1}}.作者姓名：{{item.work.user.name}}</text>
+            </navigator>  
+          </view>
+          <text class='title'>{{item.work.title}}</text>
+          <image src='{{item.work.image_urls.px_128x128}}'></image>
+          <text class='time'>{{item.work.created_time}}</text>
+          <block class='btn'>
+              <button type='primary' plain  size="mini" wx:for="{{item.work.tags}}" wx:for-item="Initem" wx:key>{{Initem}}</button>
+          </block>
+      </view>
+  </block> 
+  <button type='warn' bindtap='show_more' plain='{{plain}}' loading='{{loading}}'>加载更多</button>  
+</view>

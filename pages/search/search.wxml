@@ -1,0 +1,19 @@
+<view>
+  <block wx:for="{{searchList}}" wx:for-item="item" wx:key>
+      <view class='li'>
+          <view class='user'>
+              <!-- <text class='account'>{{item.user.account}}</text> -->
+            <navigator url="../more/member_illust?uid={{item.user.id}}">
+              <text class='nickname'>{{index+1}}.作者姓名：{{item.user.name}}</text>
+            </navigator>  
+          </view>
+          <text class='title'>{{item.title}}</text>
+          <image src='{{item.image_urls.px_128x128}}'></image>
+          <text class='time'>{{item.created_time}}</text>
+          <block class='btn'>
+              <button type='primary' plain  size="mini" wx:for="{{item.tags}}" wx:for-item="Initem" wx:key>{{Initem}}</button>
+          </block>
+      </view>
+  </block>
+  <button type='warn' bindtap='search_more'>更多搜索</button>
+</view>

@@ -1,0 +1,20 @@
+page{
+  background: black;
+}
+.li{
+  display: block;margin:0.3rem 0;background: red;color: white;text-align: left;
+}
+.li{
+  display: block;height: 30px;line-height: 30px;margin-top: 1rem;
+  position: relative;
+}
+.first{
+  margin-top:0px;
+}
+.fa{
+  padding: 0 0.5rem;
+}
+.fa-chevron-right{
+  position: absolute;top:8px;right: 0.5rem;
+  padding:0;
+}

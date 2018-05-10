@@ -1,0 +1,36 @@
+page{
+  background: black;
+}
+input{
+  display: block;margin:0.5rem 1rem;border-radius:10px;border: 1px solid white;color:whitesmoke;
+}
+.h3{
+ display: block; margin:1rem;color: #f9320c;
+}
+.li{
+  margin: 0.5rem;
+  border: 1px solid #C4FF00;border-radius: 20px 20px 0 0 ;
+}
+.li text{
+  display: block;width: 100%;
+}
+
+.user .nickname{
+  color: #EFDC05;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin:0.5rem;text-align: center;
+}
+.li .title{
+  text-align: center;line-height: 30px;height: 30px;color: #EFDC05;
+}
+.li image{
+  width: 100%;
+}
+.li .desc{
+  color: #EFDC05;height: 100%;
+}
+.li .time{
+  text-align: right;font-family: 'Times New Roman', Times, serif;font-size: 15px;color:white;
+  margin: 0.5rem 0;
+}
+button{
+  color: #A8D877;
+}

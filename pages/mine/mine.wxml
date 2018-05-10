@@ -1,0 +1,13 @@
+<!--logs.wxml-->
+<view>
+  <image src="http://p4.music.126.net/aPD65msMS3bHDEHhaLpKMA==/109951163282157268.jpg?param=200y200“"></image>
+  <text class="li first"><text class="fa fa-pencil-square-o" decode></text>修改基本信息<text class="fa fa-chevron-right" decode></text></text>
+  <text class="li"><text class="fa fa-commenting-o" decode></text>我的消息<text class="fa fa-chevron-right" decode></text></text>
+  <text class="li"><text class="fa fa-id-card" decode></text>我的好友<text class="fa fa-chevron-right" decode></text></text> 
+  <text class="li"><text class="fa fa-shopping-bag" decode></text>商城<text class="fa fa-chevron-right" decode></text></text>
+  <text class="li"><text class="fa fa-music" decode></text>音乐<text class="fa fa-chevron-right" decode></text></text>
+  <text class="li"><text class="fa fa-info-circle" decode></text>关于<text class="fa fa-chevron-right" decode></text></text>
+  <text class="li"><text class="fa fa-envelope-o" decode></text>客服<text class="fa fa-chevron-right" decode></text></text>
+
+  <contact-button  size="30" session-from="weapp">客服</contact-button>
+</view>

@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/search/search",
+    "pages/more/favorite",
+    "pages/top/top",
+    "pages/mine/mine",
+    "pages/logs/logs",
+    "pages/more/member_illust"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "pixiv",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "color":"#1296db",
+    "backgroundColor":"black",
+    "selectedColor":"#D7A035",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "特辑",
+      "iconPath": "/lib/index.png",
+      "selectedIconPath": "/lib/index_active.png"
+      },
+      {
+        "pagePath": "pages/top/top",
+        "text": "排行榜",
+        "iconPath": "/lib/top.png",
+        "selectedIconPath": "/lib/top_active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/lib/mine.png",
+        "selectedIconPath": "/lib/mine_active.png"
+      }
+    ]
+  }
+}

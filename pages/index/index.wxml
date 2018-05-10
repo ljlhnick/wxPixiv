@@ -1,0 +1,19 @@
+<view>
+  <input type='text' bindconfirm='search' placeholder='关键字'></input>
+  <text class="h3">最新特辑</text>
+  <view class='li' wx:for="{{latestList}}" wx:key>
+    <view class='user'>
+      <navigator url="../more/member_illust?uid={{item.user.id}}">
+        <text class='nickname'>{{index+1}}.作者姓名：{{item.user.name}}</text>
+      </navigator>  
+      </view>
+    <text class='title'>{{item.title}}</text>
+    <image src="{{item.image_urls.px_128x128}}"></image>
+    <text class='desc' wx:if="{{item.caption}}">描述:{{item.caption}}</text>
+    <text class='time'>{{item.created_time}}</text>
+     <block class='btn' wx:for="{{item.tags}}" wx:for-item="Initem" wx:key>
+        <button size="mini">{{Initem}}</button>
+    </block>
+  </view>
+  <button type='primary' bindtap='more' plain loading='{{loading}}'>更多最新特辑</button>
+</view>

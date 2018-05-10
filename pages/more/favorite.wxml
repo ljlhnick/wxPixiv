@@ -1,0 +1,15 @@
+<!--pages/more/favorite.wxml-->
+<view>
+  <text class="h3">{{member[0].name}}喜欢的专辑</text>
+  <block wx:for="{{favoriteList}}" wx:key>
+     <view class='li'>
+          <text class='title'>{{item.work.title}}</text>
+          <text class='desc' wx:if="{{item.work.caption}}">描述:{{item.work.caption}}</text>
+          <image src='{{item.work.image_urls.px_128x128}}'></image>
+          <text class='time'>{{item.work.created_time}}</text>
+          <block class='btn'>
+              <button type='primary' plain  size="mini" wx:for="{{item.work.tags}}" wx:for-item="Initem" wx:key>{{Initem}}</button>
+          </block>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,20 @@
+.li{
+  margin: 1rem;height: 100%;
+  border: 1px solid yellowgreen;border-radius: 10px;
+}
+.li text{
+  display: block;width: 100%;
+}
+
+.user .nickname{
+  color: navy;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin:0.5rem;
+}
+.li .title{
+  text-align: center;line-height: 30px;height: 30px;color: teal;background: black;
+}
+.li image{
+  width: 100%;
+}
+.li .time{
+  text-align: right;font-family: 'Times New Roman', Times, serif;font-size: 15px;margin: 0.5rem 0;
+}
